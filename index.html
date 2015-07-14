@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="style.css" rel="stylesheet" type="text/css"> 
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="script.js"></script>
+<title>UCHI</title>
+</head>
+<body>
+<div class="wrapper"  ng-app ng-controller="ExampleCtrl">
+	<div class="example">
+		<span>{{one}}</span>
+		<span>+</span>
+		<span>{{two}}</span>
+		<span>=</span>
+		<span>?</span>
+		<span><input type="text" value="" id="reply" ng-model="value3" ng-change="comparison3()"></span>
+	</div>
+	<div class="picture">
+		<span class="number1">
+			<span class="view1">{{one}}</span>
+			<input type="text" id="oneNumber" ng-model="value1" ng-change="comparison()">
+			<canvas id="myCanvas1"></canvas>
+		</span>
+		<span class="number2">
+			<span class="view2">{{two}}</span>
+			<input type="text" id="twoNumber" ng-model="value2" ng-change="comparison2()">
+			<canvas id="myCanvas2"></canvas>
+		</span>
+	<img src="sprite.png" alt="" id="picture">
+	</div>
+
+
+</div><!--END WRAPPER-->
+</body>
+</html>
